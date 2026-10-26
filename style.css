@@ -166,3 +166,6 @@ footer strong{color:var(--white)}
 .f1{background:var(--o1);color:var(--dark)}.f2{background:var(--white);color:var(--dark)}
 .f3{background:var(--o4);color:#fff}.f4{background:var(--cream);color:var(--dark)}
 @media (prefers-reduced-motion:reduce){.faq-marquee{overflow-x:auto}.faq-track{animation:none;padding:0 clamp(20px,6vw,96px)}}
+
+/* Logo oficial (branca, transparente) no canto da barra, proporção 737:321 preservada */
+.brand img{width:auto;height:38px;border-radius:0;object-fit:contain}
