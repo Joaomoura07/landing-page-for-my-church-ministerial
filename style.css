@@ -169,3 +169,16 @@ footer strong{color:var(--white)}
 
 /* Logo oficial (branca, transparente) no canto da barra, proporção 737:321 preservada */
 .brand img{width:auto;height:38px;border-radius:0;object-fit:contain}
+
+/* Hero: fundo em degradê fluido laranja (arte enviada), deitado no desktop e em pé no celular */
+.hero{display:flex;flex-direction:column;justify-content:center;
+  background:
+    linear-gradient(90deg,rgba(42,18,4,.38),rgba(42,18,4,0) 65%),
+    url("assets/fundo-paisagem.jpg") center/cover no-repeat,
+    var(--o3)}
+@media (max-width:760px){
+  .hero{background:
+    linear-gradient(180deg,rgba(42,18,4,.3),rgba(42,18,4,0) 70%),
+    url("assets/fundo-retrato.jpg") center/cover no-repeat,
+    var(--o3)}
+}
