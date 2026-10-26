@@ -151,3 +151,18 @@ footer strong{color:var(--white)}
   mix-blend-mode:normal;transition:none}
 .hero-logo img:hover{transform:none}
 @media (max-width:760px){.hero-logo{margin:-20px 0 -40px}.hero-logo img{width:min(300px,calc(100vw - 40px));margin:0}}
+
+/* Dúvidas frequentes: faixa que rola da direita para a esquerda */
+.faq{background:var(--dark);padding-left:0;padding-right:0;overflow:hidden}
+.faq h2,.faq .sub{padding:0 clamp(20px,6vw,96px)}
+.faq-marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.faq-track{display:flex;width:max-content;animation:faq-scroll 45s linear infinite}
+.faq-marquee:hover .faq-track,.faq-marquee:focus-within .faq-track{animation-play-state:paused}
+.faq-group{display:flex;gap:20px;padding-right:20px}
+@keyframes faq-scroll{to{transform:translateX(-50%)}}
+.faq-card{flex:0 0 clamp(250px,26vw,320px);border-radius:var(--r);padding:28px;min-height:190px}
+.faq-card h3{font-size:1.35rem;margin-bottom:10px}
+.f1{background:var(--o1);color:var(--dark)}.f2{background:var(--white);color:var(--dark)}
+.f3{background:var(--o4);color:#fff}.f4{background:var(--cream);color:var(--dark)}
+@media (prefers-reduced-motion:reduce){.faq-marquee{overflow-x:auto}.faq-track{animation:none;padding:0 clamp(20px,6vw,96px)}}
